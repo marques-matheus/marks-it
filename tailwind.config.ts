@@ -9,8 +9,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        marks:{
+          100: '#4B7881',
+          200: '#2E5860',
+          300: '#1c7383',
+          400: '#1c646c',
+          500: '#1c5661',
+          600: '#274c4e',
+          700: '#1c4046',
+          800: '#1f2729',
+        }
       },
     },
   },
