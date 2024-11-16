@@ -12,8 +12,8 @@ import React, {
 interface MyContextType {
     refs: Record<string, MutableRefObject<HTMLElement | null>>; // Referências dinâmicas
     getOrCreateRef: (key: string) => MutableRefObject<HTMLElement | null>; // Método para criar referências dinamicamente
-    state: string; // Estado global
-    setState: React.Dispatch<React.SetStateAction<string>>; // Atualizador do estado global
+    isOpen: boolean; // Estado global
+    setIsOpen: React.Dispatch<React.SetStateAction<boolean>>; // Atualizador do estado global
 }
 
 // Criação do contexto
@@ -23,9 +23,10 @@ const MyContext = createContext<MyContextType | undefined>(undefined);
 export const ContextProvider = ({ children }: { children: ReactNode }) => {
     // Armazena referências dinamicamente
     const refs: Record<string, MutableRefObject<HTMLElement | null>> = {
-        section5: useRef<HTMLElement | null>(null),
-        section6: useRef<HTMLElement | null>(null),
-        section15: useRef<HTMLElement | null>(null),
+        home: useRef<HTMLElement | null>(null),
+        about: useRef<HTMLElement | null>(null),
+        projects: useRef<HTMLElement | null>(null),
+        contact: useRef<HTMLElement | null>(null),
         // Adicione outras seções, caso necessário
     };
 
@@ -36,10 +37,10 @@ export const ContextProvider = ({ children }: { children: ReactNode }) => {
         return refs[key];
     };
 
-    const [state, setState] = useState<string>('inicial');
+    const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <MyContext.Provider value={{ refs, getOrCreateRef, state, setState }}>
+        <MyContext.Provider value={{ refs, getOrCreateRef, isOpen, setIsOpen }}>
             {children}
         </MyContext.Provider>
     );

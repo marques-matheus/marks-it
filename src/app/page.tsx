@@ -1,14 +1,16 @@
 'use client'
-'use client'
-import Image from "next/image";
 import { ContextProvider, useMyContext } from "./context/Context";
-import Home from "./organisms/home";
+
+import Header from "./organisms/header";
+import Home from "./organisms/home/home";
 
 export default function App() {
 
   return (
     <ContextProvider>
+      <Header />
       <Home />
+     
     </ContextProvider >
   );
 }
