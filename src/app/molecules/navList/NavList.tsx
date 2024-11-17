@@ -2,25 +2,26 @@ import React from "react";
 import NavLink from "@/app/atoms/navLink";
 import { BiMenu } from "react-icons/bi";
 import { useMyContext } from "@/app/context/Context";
+import Button from "@/app/atoms/button";
 
 
 const links = [
     {
         href: "#home",
-        label: "Home",
+        label: "Ínicio",
 
     },
     {
         href: "#about",
-        label: "About",
+        label: "Sobre",
     },
     {
-        href: "#projects",
-        label: "Projects",
+        href: "#services",
+        label: "Serviços",
     },
     {
         href: "#contact",
-        label: "Contact",
+        label: "Contato",
     },
 ]
 const NavList: React.FC = () => {
@@ -39,13 +40,14 @@ const NavList: React.FC = () => {
                         {link.label}
                     </NavLink>
                 ))}
+                <Button onClick={()=>{window.location.href = 'https://suporte.marksit.info/'}} text="Área do Cliente" />
             </nav>
             <button
                 onClick={() => setIsOpen(!isOpen)}
                 onBlur={() => setTimeout(() => setIsOpen(false), 100)}
                 className="text-white hover:text-marks-400 transition-all duration-300 block md:hidden"
             >
-                <BiMenu size={40} />
+                <BiMenu size={40} className="text-white" />
             </button>
         </>
     );

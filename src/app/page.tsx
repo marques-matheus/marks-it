@@ -1,6 +1,7 @@
 'use client'
 import { ContextProvider, useMyContext } from "./context/Context";
 import About from "./organisms/about";
+import Footer from "./organisms/footer";
 
 import Header from "./organisms/header";
 import Home from "./organisms/home";
@@ -15,6 +16,7 @@ export default function App() {
       <Home />
       <About />
       <Services />
+      <Footer />
 
     </ContextProvider >
   );

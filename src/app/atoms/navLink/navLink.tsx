@@ -11,7 +11,7 @@ const NavLink: React.FC<{ href: string; children: React.ReactNode }> = ({
 
     return (
         <button
-            className="text-white hover:text-cyan-200  text-sm lg:text-xl transition-all duration-300"
+            className="text-white hover:scale-90 hover:text-gray-400   text-sm lg:text-lg transition-all duration-300 uppercase"
             onClick={(e) => {
                 e.preventDefault();
                 const key = href.replace('#', ''); // Converte "#section1" para "section1"

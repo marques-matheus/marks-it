@@ -19,7 +19,7 @@ const Home = () => {
                     Quasi repellat, eaque repellendus aperiam tempore, quidem,
                 </p>
             </article>
-            <Image src="/tech2.svg" alt="animação com duas pessoas na frente analizando dados, ao fundo um foguete decolando e alguns dados de BI" className="w-auto md:w-2/4 lg:w-96 xl:w-2/4" width={600} height={400} />
+            <Image src="/hero-img.png" alt="animação com duas pessoas na frente analizando dados, ao fundo um foguete decolando e alguns dados de BI" className="w-auto md:w-2/4 lg:w-96 xl:w-2/4" width={600} height={400} />
             <a className="hidden" href="https://storyset.com/business">Business illustrations by Storyset</a>
         </Section>
     );

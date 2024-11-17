@@ -27,7 +27,7 @@ export const ContextProvider = ({ children }: { children: ReactNode }) => {
     const refs: Record<string, MutableRefObject<HTMLElement | null>> = {
         home: useRef<HTMLElement | null>(null),
         about: useRef<HTMLElement | null>(null),
-        projects: useRef<HTMLElement | null>(null),
+        services: useRef<HTMLElement | null>(null),
         contact: useRef<HTMLElement | null>(null),
         // Adicione outras seções, caso necessário
     };
