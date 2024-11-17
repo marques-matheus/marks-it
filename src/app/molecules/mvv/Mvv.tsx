@@ -16,10 +16,10 @@ const Mvv = () => {
     return (
         <div className="flex flex-col gap-4">
             {mocks.map((mock) => (
-                <div key={mock.title} className="flex flex-col gap-2">
+                <article key={mock.title} className="flex flex-col gap-2">
                     <h3 className="font-bold text-xl text-marks-400 border-l-4 pl-2 border-marks-500">{mock.title}</h3>
                     <p className="text-sm text-marks-800">{mock.description}</p>
-                </div>
+                </article>
             ))}
         </div>
     )

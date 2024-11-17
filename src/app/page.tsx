@@ -4,6 +4,7 @@ import About from "./organisms/about";
 
 import Header from "./organisms/header";
 import Home from "./organisms/home";
+import Services from "./organisms/servicesPage";
 
 export default function App() {
 
@@ -13,6 +14,7 @@ export default function App() {
       <Header />
       <Home />
       <About />
+      <Services />
 
     </ContextProvider >
   );
