@@ -8,6 +8,7 @@ import Section from "@/app/templates/section/Section";
 const Home = () => {
     return (
         <Section
+            classes={`h-fit text-center flex items-center justify-around flex-col md:flex-row bg-gradient-to-b from-marks-600 to-marks-100`}
             id="home">
             <article className="text-start max-w-xl">
                 <h1 className="text-3xl font-bold text-white">
