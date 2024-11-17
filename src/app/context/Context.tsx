@@ -14,6 +14,8 @@ interface MyContextType {
     getOrCreateRef: (key: string) => MutableRefObject<HTMLElement | null>; // Método para criar referências dinamicamente
     isOpen: boolean; // Estado global
     setIsOpen: React.Dispatch<React.SetStateAction<boolean>>; // Atualizador do estado global
+    isScrolling: boolean;
+    setIsScrolling: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 // Criação do contexto
@@ -38,9 +40,10 @@ export const ContextProvider = ({ children }: { children: ReactNode }) => {
     };
 
     const [isOpen, setIsOpen] = useState(false);
+    const [isScrolling, setIsScrolling] = useState(false);
 
     return (
-        <MyContext.Provider value={{ refs, getOrCreateRef, isOpen, setIsOpen }}>
+        <MyContext.Provider value={{ refs, getOrCreateRef, isOpen, setIsOpen, isScrolling, setIsScrolling }}>
             {children}
         </MyContext.Provider>
     );
