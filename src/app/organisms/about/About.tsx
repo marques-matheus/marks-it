@@ -4,7 +4,7 @@ import Mvv from "@/app/molecules/mvv";
 
 const About = () => {
     return (
-        <Section id="about" bg="bg-gradient-to-b bg-zinc-300">
+        <Section id="about" bg="bg-gradient-to-b bg-gray-100">
             <Heading text="Quem somos" />
             <div className="flex flex-col lg:flex-row p-4 lg:p-10  items-baseline justify-around space-y-10  lg:space-y-0 md:space-x-10">
                 <article className="text-start max-w-xl xl:max-w-2xl 2xl:max-w-3xl">

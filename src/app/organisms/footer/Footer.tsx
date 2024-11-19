@@ -26,7 +26,7 @@ const links = [
 
 const Footer = () => {
     return (
-        <Section id="footer" bg="bg-gradient-to-b from-marks-800 to-marks-600" classes="flex flex-col gap-4 xl:py-0 xl:pt-16">
+        <Section id="footer" bg="bg-gradient-to-b from-marks-800 to-marks-600" classes="flex flex-col gap-4 pt-10 pb-0 xl:py-0 xl:pt-16 xl:py-0">
             <div className="flex flex-col md:flex-row justify-between items-center md:items-start">
                 <article className="text-gray-200 flex flex-col items-center">
                     <Image src="/logo-white.svg" alt="Logo" width={100} height={100} className="w-36 mb-5" />

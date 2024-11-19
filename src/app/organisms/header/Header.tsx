@@ -6,7 +6,7 @@ const Header: React.FC = () => {
     return (
         <header className="bg-marks-600 py-4">
             <div className="container mx-auto flex items-center px-5 justify-between lg:px-20 xl:px-16">
-                <Image src="/logo-white.svg" alt="Logo" width={100} height={100} className="w-36 lg:w-48" />
+                <Image src="/logo-branco.png" alt="Logo" width={100} height={100} className="w-36 lg:w-48" />
                 <NavList />
             </div>
         </header>

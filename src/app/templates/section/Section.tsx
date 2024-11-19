@@ -17,7 +17,7 @@ const Section: React.FC<SectionProps> = ({ id, children, refPage, bg, classes })
         <section
             id={id}
             ref={refPage || refs[id]} // Usa `refPage` se fornecida, caso contrário, pega do contexto
-            className={`w-full pt-16 px-8 xl:py-16 xl:px-32 ${bg}  xl:space-x-4 ${classes}`}
+            className={`w-full pt-16 px-8  xl:px-32 ${bg}  xl:space-x-4 ${classes}`}
         >
             {children}
         </section>
