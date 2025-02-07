@@ -32,7 +32,7 @@ const NavList: React.FC = () => {
             <nav
                 className={`md:flex ${isOpen
                     ? 'flex animate-slideIn absolute bg-marks-600 w-full top-0 left-0 space-y-6 items-start p-10'
-                    : 'hidden animate-slideOut -left-96 top-0'
+                    : 'hidden animate-slideOut md:animate-none -left-96 top-0'
                     } md:flex-row flex-col justify-around md:space-x-6 transition-all duration-300 ease-in-out`}
             >
                 {links.map((link) => (

@@ -14,10 +14,12 @@ const Home = () => {
                 <h1 className="text-3xl font-bold text-white">
                     Estratégias e Soluções com foco nos Resultados!
                 </h1>
-                {/* <p className="text-gray-400">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quasi repellat, eaque repellendus aperiam tempore, quidem,
-                </p> */}
+                <p className="text-gray-200">
+                    <span className="font-bold text-white mr-1">
+                        Soluções inteligentes para transformar sua empresa! 
+                    </span>
+                    Na Marks IT, oferecemos consultoria tecnológica integrada com foco em reduzir custos, aumentar a produtividade e mitigar riscos. Nossa missão é fornecer soluções personalizadas que geram resultados reais, sempre com confiança, honestidade e transparência.
+                </p>
             </article>
             <Image src="/tech-company-animate.svg" alt="animação com duas pessoas na frente analizando dados, ao fundo um foguete decolando e alguns dados de BI" className="w-auto md:w-2/4 lg:w-96 xl:w-2/4" width={600} height={400} />
             <a className="hidden" href="https://storyset.com/business">Business illustrations by Storyset</a>
